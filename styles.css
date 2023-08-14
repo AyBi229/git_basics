@@ -1,10 +1,14 @@
 h1{
     color: rgb(95, 95, 1);
     background-color: white;
+    text-align: center;
+    width: 20%;
+    margin:auto;
 }
 p{
     color: rgb(144, 66, 144);
     background-color: rgb(1, 1, 87);
+    padding: 5px;
 }
 body{
     background-color: grey;
