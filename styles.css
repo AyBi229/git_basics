@@ -1,25 +1,6 @@
-h1{
-    color: rgb(95, 95, 1);
-    background-color: white;
+.title{
     text-align: center;
-    width: 20%;
-    margin:auto;
 }
-p{
-    color: rgb(144, 66, 144);
-    background-color: rgb(1, 1, 87);
-    padding: 5px;
-}
-body{
-    background-color: white;
-}
-.rainbow-text{
-    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 3em;
-    width: 100%;
-    margin-top: 100px;
-    font-family: 'Arial', sans-serif;
+#circle{
+    background-color: tomato;
 }
