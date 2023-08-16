@@ -1,4 +1,4 @@
-var canvas = document.getElementById("circle");
+var canvas = document.getElementById("yellow");
 var context = canvas.getContext("2d");
 
 var centerX = canvas.width / 2;
