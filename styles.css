@@ -1,6 +1,14 @@
 .title{
     text-align: center;
 }
-#circle{
-    background-color: tomato;
+#yellow{
+}
+.candy-containers{
+    background-color: rgb(0, 131, 212);
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightblue;
+}
+.row{
+    display: flex;
 }
