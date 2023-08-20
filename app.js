@@ -1,4 +1,5 @@
 var canvases = document.getElementsByClassName("candy");
+
 Array.from(canvases).forEach(canvas => {
     var context = canvas.getContext("2d");
 
@@ -20,6 +21,33 @@ Array.from(canvases).forEach(canvas => {
     context.fillStyle = fillColor;
     context.fill();
     context.closePath();
+});
+
+Array.from(canvases).forEach(canvas => {
+    let isDragging = false;
+    let offsetX = 0;
+    let offsetY = 0;
+
+    canvas.addEventListener("mousedown", (e) =>{
+        isDragging = true;
+        offsetX = e.clientX - canvas.getBoundingClientRect().left;
+        offsetY = e.clientY - canvas.getBoundingClientRect().top;
+        canvas.style.cursor = "grabbing";
+    });
+
+    document.addEventListener("mousemove", (e) => {
+        if(!isDragging) return;
+        
+        const newX = e.clientX - offsetX;
+        const newY = e.clientY - offsetY;
+
+        canvas.style.left = "${newX}px";
+        canvas.style.top = "${newY}px";
+    });
+    document.addEventListener("mouseup", ()=> {
+        isDragging = false;
+        canvas.style.cursor = "grab";
+    });
 });
 
 //console.log((100*50)/400);

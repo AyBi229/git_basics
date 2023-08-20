@@ -1,7 +1,9 @@
 .title{
     text-align: center;
 }
-#yellow{
+.candy{
+    position: absolute;
+    cursor: grab;
 }
 .candy-containers{
     background-color: rgb(0, 131, 212);
